@@ -1,29 +1,58 @@
 # Spoken Wiki
 
 ## Goal
-This project aims to create easy to consume videos created from english Wikipedia articles.
+This project aims to generate easy to consume videos created from english Wikipedia articles.
+
+This project is currently online at [https://spoken.wiki/](https://spoken.wiki/)
+
+## Repositories
+
+List of repostitories used by Spoken Wiki.
+
+### 🚀 apollo :: [repo](https://github.com/spoken-wiki/apollo)
+The Apollo project is a backend service written in Deno that orchestrates the collection and generation of spoken wiki videos. It acts as a central controller, coordinating data flow between other services in the Spoken Wiki system.
+
+### 🌐 athena :: [repo](https://github.com/spoken-wiki/athena)
+The Athena project is a web application built with the Laravel PHP framework. It serves as the main user-facing portal for the Spoken Wiki system, providing features such as browsing, searching, and accessing generated spoken wiki videos.
+
+### ⏱️ chronos :: [repo](https://github.com/spoken-wiki/chronos)
+The Chronos project is a service for scheduling and automating background jobs related to Wikimedia data processing. It uses cron expressions to periodically trigger tasks such as data collection and video generation by making HTTP requests to the Apollo service.
+
+### 🛠️ hephaestus :: [repo](https://github.com/spoken-wiki/hephaestus)
+The Hephaestus project is a modular pipeline for generating spoken wiki videos from Wikipedia articles. It consists of several stages, each in its own subfolder, handling a specific part of the process.
+
+### 😴 hypnos :: [repo](https://github.com/spoken-wiki/hypnos)
+The Hypnos project is a backend service for managing and tracking the processing of Wikipedia articles and their associated video generation tasks.
+
+### 🏗️ infra :: [repo](https://github.com/spoken-wiki/infra)
+The Infra project provides infrastructure management and deployment scripts for the Spoken Wiki system. It organizes environment configuration, container orchestration, and provisioning for both development (dev) and production (prd) setups.
 
 ## Roadmap
 
-### Phase 1
-
+### 🟢 Phase 1
 Goals for the first phase:
 - Development of an infrastructe the allows the automatic generation of videos based on Wikipedia articles
-- Test of multiple articles
+- Make the project available online
 
-### Phase 2
+Phase finished on December, 2022.
 
+### 🟡 Phase 2
 Goals for the second phase:
+- Setup of a blog
+- RSS Feed
+- Improve audio generation (use other models)
+- Test of multiple articles (check bellow)
+
+### 🔴 Phase 3
+Goals for the third phase:
 - Setup of an Youtube account
 - Automatic distruibuiton of videos via Youtube
 
-### Phase 3
-
-Goals for the third phase:
+### 🔴 Phase 4
+Goals for the fourth phase:
 - Integration with Instagram
 - Integration with Twitter
 - Integration with Facebook
-- Setup of a blog
 
 ## Test Articles
 
@@ -42,38 +71,5 @@ Goals for the third phase:
 | [Portugal](https://en.wikipedia.org/wiki/Portugal)                            | 31 202    | ❌ | ❌ |
 | [The_Castle_(novel)](https://en.wikipedia.org/wiki/The_Castle_(novel))        |  5 654    | ❌ | ❌ |
 
-Word counter: https://wordcounter.net/website-word-count
 
-# Publish
 
-## Youtube
-
-### Title
-
-... [Spoken Wikipedia article]
-
-### Description
-
-This video is a auto-generated spoken version of the article with the same name on Wikipedia.
-
-Spoken Wikipedia is a beta project that aims to convert Wikipedia articles into videos to allow a easier consumption.
-
-Any feedback on the quality of this video is welcome! Send us a message to spokenwikiproject@gmail.com
-
-Source: https://en.wikipedia.org/wiki/ (as of 24/Jun/2021)
-
-### Tags
-
-> wikipedia
-
-### Language
-
-> English
-
-### Recording date
-
-> Creation date
-
-### Category
-
-> Education
