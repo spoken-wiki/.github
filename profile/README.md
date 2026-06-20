@@ -27,6 +27,31 @@ The Hypnos project is a backend service for managing and tracking the processing
 ### 🏗️ infra :: [repo](https://github.com/spoken-wiki/infra)
 The Infra project provides infrastructure management and deployment scripts for the Spoken Wiki system. It organizes environment configuration, container orchestration, and provisioning for both development (dev) and production (prd) setups.
 
+## Architecture
+
+athena:
+- Web interface
+- Uses hypnos to get articles and videos
+
+chronos:
+- Cron job scheduler
+- Trigger collect job on apollo
+
+apollo:
+- REST API interface
+- Handles two types of work:
+- - collect: get new articles from wikipedia
+- - generate: triggers video generation process for articles without video (can run in the background)
+
+hypnos:
+- REST API interface
+- Persistence layer interface, connects to postgresql database
+
+hephaestus:
+- REST API interface
+- Pipeline to generate videos from articles
+
+
 ## Roadmap
 
 ### 🟢 Phase 1
@@ -38,6 +63,7 @@ Phase finished on December, 2022.
 
 ### 🟡 Phase 2
 Goals for the second phase:
+- Make all repos public
 - Setup of a blog
 - RSS Feed
 - Improve audio generation (use other models)
