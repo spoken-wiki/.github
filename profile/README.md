@@ -63,9 +63,13 @@ Phase finished on December, 2022.
 
 ### 🟡 Phase 2
 Goals for the second phase:
+- Change DB password
+- Remove chronos repo
+- Add hephaestus prefix to docker images
+- Merge/reduce hephaestus services
 - Make all repos public
-- Setup of a blog
 - RSS Feed
+- Setup a blog
 - Improve audio generation (use other models)
 - Test of multiple articles (check bellow)
 
