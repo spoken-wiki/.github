@@ -15,9 +15,6 @@ The Apollo project is a backend service written in Deno that orchestrates the co
 ### 🌐 athena :: [repo](https://github.com/spoken-wiki/athena)
 The Athena project is a web application built with the Laravel PHP framework. It serves as the main user-facing portal for the Spoken Wiki system, providing features such as browsing, searching, and accessing generated spoken wiki videos.
 
-### ⏱️ chronos :: [repo](https://github.com/spoken-wiki/chronos)
-The Chronos project is a service for scheduling and automating background jobs related to Wikimedia data processing. It uses cron expressions to periodically trigger tasks such as data collection and video generation by making HTTP requests to the Apollo service.
-
 ### 🛠️ hephaestus :: [repo](https://github.com/spoken-wiki/hephaestus)
 The Hephaestus project is a modular pipeline for generating spoken wiki videos from Wikipedia articles. It consists of several stages, each in its own subfolder, handling a specific part of the process.
 
