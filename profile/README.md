@@ -33,10 +33,6 @@ athena:
 - Web interface
 - Uses hypnos to get articles and videos
 
-chronos:
-- Cron job scheduler
-- Trigger collect job on apollo
-
 apollo:
 - REST API interface
 - Handles two types of work:
@@ -63,12 +59,12 @@ Phase finished on December, 2022.
 
 ### 🟡 Phase 2
 Goals for the second phase:
+- ✅ RSS Feed
+- ✅ Remove chronos repo
 - Change DB password
-- Remove chronos repo
 - Add hephaestus prefix to docker images
 - Merge/reduce hephaestus services
 - Make all repos public
-- RSS Feed
 - Setup a blog
 - Improve audio generation (use other models)
 - Test of multiple articles (check bellow)
